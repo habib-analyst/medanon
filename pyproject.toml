@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medanon"
+version = "0.1.0"
+description = "DICOM anonymization + PHI-leak QA for medical-imaging research"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["pydicom", "numpy"]
+
+[project.scripts]
+medanon = "medanon.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["medanon*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

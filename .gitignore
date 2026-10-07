@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+*.dcm
+data/
+medanon-demo/
+qa.md
+pseudonym_map.json
+.DS_Store
